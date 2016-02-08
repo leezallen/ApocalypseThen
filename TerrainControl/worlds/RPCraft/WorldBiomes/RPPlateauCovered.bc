@@ -1,4 +1,4 @@
-# This is the biome config file of the RPCanyons biome, which is a custom biome.
+# This is the biome config file of the RPPlateau biome, which is a custom biome.
 
 #######################################################################
 # +-----------------------------------------------------------------+ #
@@ -31,7 +31,7 @@ ResourceInheritance: true
 # Isle biomes:   BiomeSizeWhenIsle (see below)
 # Border biomes: BiomeSizeWhenBorder (see below)
 # River biomes:  RiverSize (see WorldConfig)
-BiomeSize: 4
+BiomeSize: 5
 
 # Biome rarity from 100 to 1. If this is normal or ice biome - chance for spawn this biome then others.
 # Example for normal biome :
@@ -59,7 +59,7 @@ ReplaceToBiomeName:
 
 # List of biomes in which this biome will spawn as an isle.
 # For example, Mushroom Isles spawn inside the Ocean biome.
-IsleInBiome: 
+IsleInBiome: RPMesa
 
 # Size of this biome when spawned as an ilse biome.
 # Valid values range from 0 to GenerationDepth.
@@ -68,7 +68,7 @@ IsleInBiome:
 BiomeSizeWhenIsle: 5
 
 # Rarity of this biome when spawned as an ilse biome.
-BiomeRarityWhenIsle: 95
+BiomeRarityWhenIsle: 97
 
 ######################
 # Border biomes only #
@@ -102,10 +102,10 @@ BiomeSizeWhenBorder: 8
 # BiomeHeight mean how much height will be added in terrain generation
 # It is double value from -10.0 to 10.0
 # Value 0.0 equivalent half of map height with all other default settings
-BiomeHeight: -2.2
+BiomeHeight: -1.5
 
 # Biome volatility.
-BiomeVolatility: 0.5
+BiomeVolatility: 0.025
 
 # Smooth radius between biomes. Must be between 0 and 32, inclusive. The resulting
 # smooth radius seems to be  (thisSmoothRadius + 1 + smoothRadiusOfBiomeOnOtherSide) * 4 .
@@ -123,12 +123,12 @@ MaxAverageDepth: 0.0
 
 # Another type of noise. This noise is independent from biomes. The larger the values the more chaotic/volatile landscape generation becomes.
 # Setting the values to negative will have the opposite effect and make landscape generation calmer/gentler.
-Volatility1: 0.5
+Volatility1: 0.0
 
-Volatility2: 0.3
+Volatility2: 0.0
 
 # Adjust the weight of the corresponding volatility settings. This allows you to change how prevalent you want either of the volatility settings to be in the terrain.
-VolatilityWeight1: 0.6
+VolatilityWeight1: 0.5
 
 VolatilityWeight2: 0.45
 
@@ -191,7 +191,7 @@ RiverCustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 StoneBlock: STONE
 
 # Surface block, usually GRASS.
-SurfaceBlock: HARD_CLAY
+SurfaceBlock: DIRT:1
 
 # Block from stone to surface, like dirt in most biomes.
 GroundBlock: HARD_CLAY
@@ -209,7 +209,7 @@ GroundBlock: HARD_CLAY
 
 # Alternatively, you can use Mesa, MesaForest or MesaBryce to get blocks
 # like the blocks found in the Mesa biomes.
-SurfaceAndGroundControl: HARD_CLAY, HARD_CLAY, -1.0, DIRT:1, HARD_CLAY, 2.5, DIRT, DIRT, 3.5, GRASS, DIRT, 9.5 
+SurfaceAndGroundControl: STONE, STONE, -7, DIRT:1, HARD_CLAY, -1, DIRT, DIRT, 1.5, GRASS, DIRT, 10
 
 # Replace Variable: (blockFrom,blockTo[:blockDataTo][,minHeight,maxHeight])
 # Example :
@@ -335,39 +335,33 @@ FoliageColorIsMultiplier: true
 # Vein resource: not in vanilla. Starts an area where ores will spawn. Can be slow, so use a low Rarity (smaller than 1).
 # CustomStructure resource: starts a BO3 structure in the chunk.
 
-Ore(COAL_ORE,16,10,90.0,25,256,STONE)
-Ore(IRON_ORE,14,10,90.0,25,256,STONE)
-Ore(GOLD_ORE,9,6,50.0,55,256,STONE)
-Ore(REDSTONE_ORE,6,6,50.0,55,256,STONE)
-Ore(LAPIS_ORE,3,5,50.0,45,256,STONE)
-Ore(EMERALD_ORE,5,2,50.0,60,256,STONE)
-Ore(DIAMOND_ORE,3,2,50.0,60,256,STONE)
-Ore(STONE:1,33,5,25.0,0,80,STONE)
-Ore(STONE:3,33,5,25.0,0,80,STONE)
-Ore(STONE:5,33,5,25.0,0,80,STONE)
-SmallLake(LAVA,1,20.0,60,255)
-SmallLake(WATER,2,25.0,8,255)
-UnderWaterOre(SAND,7,3,100.0,HARD_CLAY,DIRT,GRASS)
-UnderWaterOre(CLAY,4,1,100.0,HARD_CLAY,DIRT,GRASS)
-UnderWaterOre(GRAVEL,6,1,100.0,HARD_CLAY,DIRT,GRASS)
-Boulder(EMERALD_ORE,1,3.0,50,250,GRASS,HARD_CLAY)
-Boulder(DIAMOND_ORE,1,1.0,50,250,GRASS,HARD_CLAY)
-Tree(2,Birch,20,Tree,100)
-Tree(1,BigTree,20)
-Grass(DeadBush,NotGrouped,7,100.0,SAND,HARD_CLAY,DIRT)
-Grass(Tallgrass,NotGrouped,10,100.0,GRASS)
-Plant(Poppy,1,100.0,0,128,GRASS)
-Plant(Dandelion,3,100.0,0,128,GRASS)
-Plant(OrangeTulip,3,25.0,0,128,GRASS)
-Plant(RedTulip,3,25.0,0,128,GRASS)
-Plant(WhiteTulip,3,25.0,0,128,GRASS)
-Plant(PinkTulip,3,25.0,0,128,GRASS)
-Plant(AzureBluet,3,100.0,0,128,GRASS)
-Plant(OxeyeDaisy,3,100.0,0,128,GRASS)
-Plant(PUMPKIN,1,10.0,0,128,GRASS)
-Reed(SUGAR_CANE_BLOCK,5,100.0,0,128,GRASS,DIRT,SAND)
-Cactus(CACTUS,10,100.0,0,128,SAND)
-Dungeon(1,10.0,0,128)
+Ore(DIRT,33,10,100.0,0,256,STONE)
+Ore(GRAVEL,33,8,100.0,0,256,STONE)
+Ore(STONE:1,33,10,12.0,0,80,STONE)
+Ore(STONE:3,33,10,12.0,0,80,STONE)
+Ore(STONE:5,33,10,12.0,0,80,STONE)
+Ore(COAL_ORE,12,6,50.0,0,128,STONE)
+Ore(IRON_ORE,10,6,50.0,0,128,STONE)
+Ore(GOLD_ORE,8,2,50.0,0,128,STONE)
+Ore(REDSTONE_ORE,8,2,10.0,0,16,STONE)
+Ore(DIAMOND_ORE,4,2,5.0,0,16,STONE)
+Ore(LAPIS_ORE,2,1,20.0,0,16,STONE)
+SmallLake(WATER,4,25.0,8,150)
+UnderWaterOre(SAND,7,3,100.0,DIRT,GRASS)
+UnderWaterOre(CLAY,4,1,100.0,DIRT,CLAY)
+UnderWaterOre(GRAVEL,6,1,100.0,DIRT,GRASS)
+Tree(12,DarkOak,100)
+Grass(DoubleTallgrass,NotGrouped,80,100.0,GRASS,DIRT,DIRT:1)
+Plant(Poppy,2,50.0,0,128,GRASS,DIRT)
+Plant(Dandelion,1,50.0,0,128,GRASS,DIRT)
+Plant(Lilac,1,50.0,0,128,GRASS,DIRT)
+Plant(RoseBush,1,50.0,0,128,GRASS,DIRT)
+Plant(Peony,1,50.0,0,128,GRASS,DIRT)
+Plant(RedMushroom,1,6.0,0,128,GRASS,DIRT)
+Plant(BrownMushroom,1,12.0,0,128,GRASS,DIRT)
+Plant(PUMPKIN,1,3.0,0,128,GRASS)
+Reed(SUGAR_CANE_BLOCK,3,100.0,0,128,GRASS,SAND)
+Cactus(CACTUS,5,100.0,0,128,SAND)
 CustomObject(UseWorld)
 
 #######################################################################
@@ -457,10 +451,10 @@ RareBuildingType: disabled
 # your changes are ignored.
 
 # The monsters (skeletons, zombies, etc.) that spawn in this biome
-SpawnMonsters: [{"mob": "Zombie", "weight": 100, "min": 1, "max": 2}, {"mob": "Skeleton", "weight": 80, "min": 1, "max": 2}, {"mob": "Creeper", "weight": 25, "min": 2, "max": 3}, {"mob": "Enderman", "weight": 5, "min": 1, "max": 4}, {"mob": "Witch", "weight": 2, "min": 1, "max": 1}]
+SpawnMonsters: [{"mob": "Zombie", "weight": 100, "min": 1, "max": 3}, {"mob": "Skeleton", "weight": 75, "min": 2, "max": 3}, {"mob": "Creeper", "weight": 25, "min": 2, "max": 3}, {"mob": "Enderman", "weight": 5, "min": 1, "max": 4}]
 
 # The friendly creatures (cows, pigs, etc.) that spawn in this biome
-SpawnCreatures: [{"mob": "Sheep", "weight": 12, "min": 1, "max": 2}, {"mob": "Pig", "weight": 10, "min": 1, "max": 2}, {"mob": "Chicken", "weight": 10, "min": 2, "max": 3}, {"mob": "Cow", "weight": 8, "min": 1, "max": 2}]
+SpawnCreatures: [{"mob": "Sheep", "weight": 12, "min": 1, "max": 1}, {"mob": "Pig", "weight": 10, "min": 1, "max": 2}, {"mob": "Chicken", "weight": 10, "min": 2, "max": 3}, {"mob": "Cow", "weight": 8, "min": 1, "max": 2}]
 
 # The water creatures (only squids in vanilla) that spawn in this biome
 SpawnWaterCreatures: [{"mob": "Squid", "weight": 10, "min": 4, "max": 4}]

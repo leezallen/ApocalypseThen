@@ -31,7 +31,7 @@ ResourceInheritance: true
 # Isle biomes:   BiomeSizeWhenIsle (see below)
 # Border biomes: BiomeSizeWhenBorder (see below)
 # River biomes:  RiverSize (see WorldConfig)
-BiomeSize: 2
+BiomeSize: 4
 
 # Biome rarity from 100 to 1. If this is normal or ice biome - chance for spawn this biome then others.
 # Example for normal biome :
@@ -338,9 +338,12 @@ FoliageColorIsMultiplier: true
 Ore(GRAVEL,33,1,20.0,0,128,HARD_CLAY)
 Ore(CLAY,33,1,20.0,0,128,HARD_CLAY)
 Ore(SAND,33,1,20.0,0,128,HARD_CLAY)
-Ore(COAL_ORE,8,2,30.0,0,28,STONE)
-Ore(IRON_ORE,6,2,30.0,0,28,STONE)
-Ore(DIAMOND_ORE,3,1,5.0,0,28,STONE)
+Ore(COAL_ORE,8,2,30.0,0,35,STONE)
+Ore(IRON_ORE,6,2,30.0,0,35,STONE)
+Ore(DIAMOND_ORE,3,1,5.0,0,25,STONE)
+Ore(STONE:1,33,10,100.0,0,80,STONE)
+Ore(STONE:3,33,10,100.0,0,80,STONE)
+Ore(STONE:5,33,10,100.0,0,80,STONE)
 SmallLake(WATER,4,7.0,8,120)
 UnderWaterOre(SAND,7,3,100.0,HARD_CLAY,DIRT,GRASS)
 UnderWaterOre(CLAY,4,1,100.0,HARD_CLAY,DIRT,GRASS)
@@ -448,10 +451,10 @@ RareBuildingType: disabled
 # your changes are ignored.
 
 # The monsters (skeletons, zombies, etc.) that spawn in this biome
-SpawnMonsters: [{"mob": "Spider", "weight": 10, "min": 2, "max": 3}, {"mob": "Zombie", "weight": 100, "min": 2, "max": 3}, {"mob": "Skeleton", "weight": 10, "min": 2, "max": 3}, {"mob": "Creeper", "weight": 5, "min": 2, "max": 3}, {"mob": "Enderman", "weight": 5, "min": 1, "max": 4}, {"mob": "Witch", "weight": 2, "min": 1, "max": 1}]
+SpawnMonsters: [{"mob": "Spider", "weight": 10, "min": 2, "max": 3}, {"mob": "Zombie", "weight": 100, "min": 2, "max": 3}, {"mob": "Skeleton", "weight": 100, "min": 2, "max": 3}, {"mob": "Creeper", "weight": 100, "min": 2, "max": 3}, {"mob": "Enderman", "weight": 5, "min": 1, "max": 4}, {"mob": "Witch", "weight": 2, "min": 1, "max": 1}]
 
 # The friendly creatures (cows, pigs, etc.) that spawn in this biome
-SpawnCreatures: [{"mob": "Horse", "weight": 10, "min": 1, "max": 3}]
+SpawnCreatures: [{"mob": "Horse", "weight": 10, "min": 1, "max": 2}]
 
 # The water creatures (only squids in vanilla) that spawn in this biome
 SpawnWaterCreatures: [{"mob": "Squid", "weight": 10, "min": 4, "max": 4}]

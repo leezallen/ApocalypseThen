@@ -59,16 +59,16 @@ ReplaceToBiomeName:
 
 # List of biomes in which this biome will spawn as an isle.
 # For example, Mushroom Isles spawn inside the Ocean biome.
-IsleInBiome: RPMesa
+IsleInBiome: RPCanyons
 
 # Size of this biome when spawned as an ilse biome.
 # Valid values range from 0 to GenerationDepth.
 # Larger numbers give *smaller* islands. The biome must be smaller than the biome it's going
 # to spawn in, so the BiomeSizeWhenIsle number must be larger than the BiomeSize of the other biome.
-BiomeSizeWhenIsle: 6
+BiomeSizeWhenIsle: 5
 
 # Rarity of this biome when spawned as an ilse biome.
-BiomeRarityWhenIsle: 90
+BiomeRarityWhenIsle: 97
 
 ######################
 # Border biomes only #
@@ -105,7 +105,7 @@ BiomeSizeWhenBorder: 8
 BiomeHeight: 0.0
 
 # Biome volatility.
-BiomeVolatility: 1.2
+BiomeVolatility: 1.4
 
 # Smooth radius between biomes. Must be between 0 and 32, inclusive. The resulting
 # smooth radius seems to be  (thisSmoothRadius + 1 + smoothRadiusOfBiomeOnOtherSide) * 4 .
@@ -194,7 +194,7 @@ StoneBlock: STONE
 SurfaceBlock: HARD_CLAY
 
 # Block from stone to surface, like dirt in most biomes.
-GroundBlock: HARD_CLAY
+GroundBlock: STONE
 
 # Setting for biomes with more complex surface and ground blocks.
 # Each column in the world has a noise value from what appears to be -7 to 7.
@@ -209,7 +209,7 @@ GroundBlock: HARD_CLAY
 
 # Alternatively, you can use Mesa, MesaForest or MesaBryce to get blocks
 # like the blocks found in the Mesa biomes.
-SurfaceAndGroundControl: HARD_CLAY, HARD_CLAY, 7.0, DIRT, GRASS, 10.0 
+SurfaceAndGroundControl: HARD_CLAY, STONE, 3.0, GRAVEL, STONE, 4.0, DIRT, GRASS, 10.0 
 
 # Replace Variable: (blockFrom,blockTo[:blockDataTo][,minHeight,maxHeight])
 # Example :
@@ -350,6 +350,7 @@ UnderWaterOre(CLAY,4,1,100.0,HARD_CLAY,DIRT,GRASS)
 UnderWaterOre(GRAVEL,6,1,100.0,HARD_CLAY,DIRT,GRASS)
 Boulder(EMERALD_ORE,2,25.0,130,250,GRASS,HARD_CLAY)
 Boulder(DIAMOND_ORE,2,25.0,120,250,GRASS,HARD_CLAY)
+Tree(3,Spruce,25)
 Grass(DeadBush,NotGrouped,7,100.0,SAND,HARD_CLAY,DIRT)
 Grass(Tallgrass,NotGrouped,10,100.0,GRASS)
 Plant(Poppy,1,100.0,0,128,GRASS)
@@ -452,10 +453,10 @@ RareBuildingType: disabled
 # your changes are ignored.
 
 # The monsters (skeletons, zombies, etc.) that spawn in this biome
-SpawnMonsters: [{"mob": "Blaze", "weight": 100, "min": 1, "max": 3}, {"mob": "Ghast", "weight": 50, "min": 1, "max": 1}, {"mob": "crackedzombiemod.CrackedPigZombie", "weight": 100, "min": 1, "max": 3}, {"mob": "Skeleton", "weight": 20, "min": 2, "max": 3}, {"mob": "Creeper", "weight": 50, "min": 2, "max": 3}]
+SpawnMonsters: [{"mob": "Blaze", "weight": 10, "min": 3, "max": 5}, {"mob": "Ghast", "weight": 20, "min": 1, "max": 1}, {"mob": "crackedzombiemod.CrackedZombie", "weight": 15, "min": 1, "max": 3}, {"mob": "Zombie", "weight": 100, "min": 2, "max": 3}, {"mob": "Skeleton", "weight": 100, "min": 2, "max": 3}, {"mob": "Creeper", "weight": 50, "min": 2, "max": 3}, {"mob": "Witch", "weight": 2, "min": 1, "max": 1}]
 
 # The friendly creatures (cows, pigs, etc.) that spawn in this biome
-SpawnCreatures: [{"mob": "Ocelot", "weight": 10, "min": 1, "max": 3}, {"mob": "Wolf", "weight": 10, "min": 1, "max": 3}]
+SpawnCreatures: [{"mob": "Sheep", "weight": 10, "min": 1, "max": 3}, {"mob": "Chicken", "weight": 10, "min": 1, "max": 3}, {"mob": "Wolf", "weight": 10, "min": 1, "max": 3}]
 
 # The water creatures (only squids in vanilla) that spawn in this biome
 SpawnWaterCreatures: []
