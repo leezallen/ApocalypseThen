@@ -117,7 +117,7 @@
         "rpcraft":
         {
             "text" : "www.rpcraft.co.uk",
-            "posX" : -197,
+            "posX" : -50,
             "posY" : -10,
             "color" : -1,
             "alignment" : "bottom_right"
@@ -133,7 +133,15 @@
             "slideshow":
             {
                 "images" : [
-					"custommainmenu:scrn/bg (1).png"
+					"custommainmenu:scrn/bg (1).png",
+					"custommainmenu:scrn/bg (2).png",
+					"custommainmenu:scrn/bg (3).png",
+					"custommainmenu:scrn/bg (4).png",
+					"custommainmenu:scrn/bg (5).png",
+					"custommainmenu:scrn/bg (6).png",
+					"custommainmenu:scrn/bg (7).png",
+					"custommainmenu:scrn/bg (8).png",
+					"custommainmenu:scrn/bg (9).png"
 							],
 				"displayDuration" : 100,
 				"fadeDuration" : 40,

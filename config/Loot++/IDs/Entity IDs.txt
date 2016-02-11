@@ -1,0 +1,159 @@
+## Entity IDs ##
+ArchimedesShipsPlus.attachment.seat
+ArchimedesShipsPlus.parachute
+ArchimedesShipsPlus.shipmod
+ArmorStand
+Arrow
+Bat
+Blaze
+Boat
+CaveSpider
+Chicken
+Cow
+Creeper
+CustomNpc
+CustomNpc64x32
+EnderCrystal
+EnderDragon
+Enderman
+Endermite
+EntityHorse
+EyeOfEnderSignal
+FallingSand
+Fireball
+FireworksRocketEntity
+Ghast
+Giant
+Guardian
+Item
+ItemFrame
+LavaSlime
+LeashKnot
+MinecartChest
+MinecartCommandBlock
+MinecartFurnace
+MinecartHopper
+MinecartRideable
+MinecartSpawner
+MinecartTNT
+Mob
+Monster
+MushroomCow
+NpcDragon
+NpcSlime
+Ozelot
+Painting
+Pig
+PigZombie
+PrimedTnt
+Rabbit
+Sheep
+Silverfish
+Skeleton
+Slime
+SmallFireball
+SnowMan
+Snowball
+Spider
+Squid
+ThrownEnderpearl
+ThrownExpBottle
+ThrownPotion
+Villager
+VillagerGolem
+Witch
+WitherBoss
+WitherSkull
+Wolf
+XPOrb
+Zombie
+arrowcam.EntityCamera
+betterchests:bag
+cfm.Mirror
+cfm.MountableBlock
+crackedzombiemod.CrackedPigZombie
+crackedzombiemod.CrackedZombie
+customnpcs.CustomNpc
+customnpcs.CustomNpc64x32
+customnpcs.CustomNpcChairMount
+customnpcs.NpcDragon
+customnpcs.NpcSlime
+customnpcs.npcEnderman
+customnpcs.npcGolem
+customnpcs.npccrystal
+customnpcs.npcdwarffemale
+customnpcs.npcdwarfmale
+customnpcs.npcelffemale
+customnpcs.npcelfmale
+customnpcs.npcenderchibi
+customnpcs.npcfurryfemale
+customnpcs.npcfurrymale
+customnpcs.npchumanfemale
+customnpcs.npchumanmale
+customnpcs.npcnagafemale
+customnpcs.npcnagamale
+customnpcs.npcorcfemale
+customnpcs.npcorcfmale
+customnpcs.npcpony
+customnpcs.npcskeleton
+customnpcs.npcvillager
+customnpcs.npczombiefemale
+customnpcs.npczombiemale
+customnpcs.throwableitem
+enderArrow
+enderutilities.enderutilities.enderarrow
+enderutilities.enderutilities.enderpearlreusable
+grappleArrow
+hookArrow
+lootablebodies_EntityLootableBody
+lootplusplus.ThrownItem
+npcEnderman
+npcGolem
+npccrystal
+npcdwarffemale
+npcdwarfmale
+npcelffemale
+npcelfmale
+npcenderchibi
+npcfurryfemale
+npcfurrymale
+npchumanfemale
+npchumanmale
+npcnagafemale
+npcnagamale
+npcorcfemale
+npcorcfmale
+npcpony
+npcskeleton
+npcvillager
+npczombiefemale
+npczombiemale
+parachutemod.parachute
+## Spawn Egg IDs: in the form <number id> - <entity string id (which it spawns)> ##
+50 - Creeper
+51 - Skeleton
+52 - Spider
+54 - Zombie
+55 - Slime
+56 - Ghast
+57 - PigZombie
+58 - Enderman
+59 - CaveSpider
+60 - Silverfish
+61 - Blaze
+62 - LavaSlime
+65 - Bat
+66 - Witch
+67 - Endermite
+68 - Guardian
+90 - Pig
+91 - Sheep
+92 - Cow
+93 - Chicken
+94 - Squid
+95 - Wolf
+96 - MushroomCow
+98 - Ozelot
+100 - EntityHorse
+101 - Rabbit
+120 - Villager
